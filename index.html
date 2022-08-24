@@ -8,6 +8,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="./css & asstes/styles.css" />
   <script src="https://kit.fontawesome.com/3f1e616f56.js" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
 </head>
 
 <body>
@@ -37,22 +38,31 @@
             <a class="nav__link--special nav__link--seperation" href="">Sign up</a>
           </li>
         </ul>
-        <button class="btn__menu">
+        <button class="btn__menu" onclick="openMenu()">
           <i class="fas fa-bars"></i>
         </button>
         <div class="menu__backdrop">
-          <button class="btn__menu btn__menu--close">
+          <button class="btn__menu btn__menu--close" onclick="closeMenu()">
             <i class="fas fa-times"></i>
           </button>
-          <ul>
+          <ul class="menu__links">
             <li class="menu__list">
-              <a class="menu__link" href="#"> Home</a>
+              <a class="menu__link" onclick="closeMenu()" href="#">About</a>
             </li>
             <li class="menu__list">
-              <a class="menu__link" href="#"> </a>
+              <a class="menu__link" onclick="closeMenu()" href="#">Blog</a>
             </li>
             <li class="menu__list">
-              <a class="menu__link" href="#"> Home</a>
+              <a class="menu__link" onclick="closeMenu()" href="#">Pricing</a>
+            </li>
+            <li class="menu__list">
+              <a class="menu__link" onclick="closeMenu()" href="#">Contact Us</a>
+            </li>
+            <li class="menu__list">
+              <a class="menu__link" onclick="closeMenu()" href="#">Login</a>
+            </li>
+            <li class="menu__list">
+              <a class="menu__link nav__link--special" onclick="closeMenu()" href="#">Sign Up</a>
             </li>
           </ul>
         </div>
@@ -151,7 +161,7 @@
             </figure>
             <div class="service__description">
               <h2 class="service__description--title">Fast</h2>
-              <p class="service__description--para"> Lorem ipsum dolor sit amet.</p>
+              <p class="service__description--para"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, eveniet!</p>
             </div>
           </li>
           <li class="service__item">
